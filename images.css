@@ -1,0 +1,23 @@
+.img_me1 {
+  background-image: url('./images/me_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15em;
+  height: 20em;
+}
+
+.img_me2 {
+  background-image: url('./images/me_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15em;
+  height: 20em;
+}
+
+.img_me3 {
+  background-image: url('./images/me_3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15em;
+  height: 20em;
+}

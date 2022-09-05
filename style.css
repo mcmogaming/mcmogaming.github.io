@@ -1,0 +1,50 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#slideshow {
+  margin: 3em;
+}
+
+.portrait {
+  margin: 0 auto;
+}
+
+.portrait * {
+  margin: 0 auto;
+  box-shadow: 0 0 1em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav_btn {
+  border-color: black;
+  border-style: solid;
+  padding: 1em;
+  width: 7em;
+  margin: 0 1em;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.nav_btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.selected {
+  font-style: oblique;
+}
+
+#content {
+  margin-top: 3em;
+}
