@@ -45,3 +45,11 @@
   width: 2em;
   height: 2em;
 }
+
+.animation-canvassa {
+  background-image: url('../gif/canvassa.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  height: 28vw;
+}
