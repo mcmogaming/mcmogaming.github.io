@@ -1,5 +1,5 @@
 .img_me1 {
-  background-image: url('./images/me_1.jpg');
+  background-image: url('../images/me_1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 15em;
@@ -7,7 +7,7 @@
 }
 
 .img_me2 {
-  background-image: url('./images/me_2.jpg');
+  background-image: url('../images/me_2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 15em;
@@ -15,7 +15,7 @@
 }
 
 .img_me3 {
-  background-image: url('./images/me_3.jpg');
+  background-image: url('../images/me_3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 15em;
@@ -23,7 +23,7 @@
 }
 
 .email {
-  background-image: url('./images/email.svg');
+  background-image: url('../images/email.svg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 2em;
@@ -31,7 +31,7 @@
 }
 
 .github {
-  background-image: url('./images/github.svg');
+  background-image: url('../images/github.svg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 2em;
@@ -39,7 +39,7 @@
 }
 
 .linkedin {
-  background-image: url('./images/linkedin.svg');
+  background-image: url('../images/linkedin.svg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 2em;
