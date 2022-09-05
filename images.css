@@ -21,3 +21,27 @@
   width: 15em;
   height: 20em;
 }
+
+.email {
+  background-image: url('./images/email.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+}
+
+.github {
+  background-image: url('./images/github.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+}
+
+.linkedin {
+  background-image: url('./images/linkedin.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2em;
+  height: 2em;
+}
