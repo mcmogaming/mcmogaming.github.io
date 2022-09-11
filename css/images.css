@@ -53,3 +53,11 @@
   width: 50vw;
   height: 28vw;
 }
+
+.animation-robot {
+  background-image: url('../gif/robot.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  height: 28vw;
+}
