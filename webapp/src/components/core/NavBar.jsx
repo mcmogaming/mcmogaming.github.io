@@ -16,6 +16,7 @@ import { ReactComponent as LinkedinIcon } from "../../images/linkedin.svg"
 import EmailIcon from "@mui/icons-material/Email"
 import { SvgIcon } from "@mui/material"
 import Email from "@mui/icons-material/Email"
+import ResumePdf from "../../fullresume.pdf"
 
 const pages = ["Me", "Projects", "Resume"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
@@ -31,8 +32,14 @@ export const NavBar = () => {
     setAnchorElUser(event.currentTarget)
   }
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null)
+  const handleCloseNavMenu = (page) => {
+    return () => {
+      if (page) {
+        if (page == "Resume") {
+          window.open(ResumePdf)
+        }
+      }
+    }
   }
 
   const handleCloseUserMenu = () => {
@@ -91,7 +98,7 @@ export const NavBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu(page)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -119,7 +126,7 @@ export const NavBar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={handleCloseNavMenu(page)}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
@@ -130,7 +137,9 @@ export const NavBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Tooltip title="Github">
               <IconButton
-                onClick={handleOpenUserMenu}
+                onClick={() => {
+                  window.open("https://github.com/mcmogaming/")
+                }}
                 sx={{ color: "white", mx: 2, display: "flex", p: 0 }}
               >
                 <SvgIcon component={GithubIcon} inheritViewBox></SvgIcon>
@@ -141,7 +150,9 @@ export const NavBar = () => {
             </Tooltip>
             <Tooltip title="LinkedIn">
               <IconButton
-                onClick={handleOpenUserMenu}
+                onClick={() => {
+                  window.open("https://www.linkedin.com/in/mohammadkr/")
+                }}
                 sx={{ color: "white", mx: 2, display: "flex", p: 0 }}
               >
                 <SvgIcon component={LinkedinIcon} inheritViewBox></SvgIcon>
@@ -152,7 +163,12 @@ export const NavBar = () => {
             </Tooltip>
             <Tooltip title="Email">
               <IconButton
-                onClick={handleOpenUserMenu}
+                onClick={() => {
+                  window.open("mailto:mohammadkhrahman@gmail.com")
+                  navigator.clipboard.writeText(
+                    "mailto:mohammadkhrahman@gmail.com"
+                  )
+                }}
                 sx={{ color: "white", mx: 2, display: "flex", p: 0 }}
               >
                 <EmailIcon />

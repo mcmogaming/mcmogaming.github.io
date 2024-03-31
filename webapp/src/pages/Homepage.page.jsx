@@ -9,8 +9,10 @@ import SwapLogoImg from "../images/swap_logo.png"
 import KHERGLogoImg from "../images/kherg_logo.png"
 import Card from "@mui/material/Card"
 import CardContent from "@mui/material/CardContent"
+import MyRobotGif from "../gif/robot.gif"
+import CanvassaGif from "../gif/canvassa.gif"
 
-export const HomepageCarosel = () => {
+export const Homepage = () => {
   return (
     <>
       <Grid container spacing={2}>
@@ -198,16 +200,85 @@ export const HomepageCarosel = () => {
               Projects
             </Typography>
             <Card>
-              <Typography
-                variant="h5"
-                align="left"
-                sx={{
-                  fontWeight: "bold",
-                  fontFamily: "Arial Black, sans-serif",
-                }}
-              >
-                RobOs
-              </Typography>
+              <CardContent>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Typography
+                    variant="h5"
+                    align="left"
+                    sx={{
+                      fontWeight: "bold",
+                      fontFamily: "Arial Black, sans-serif",
+                    }}
+                  >
+                    RobOs
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://github.com/mcmogaming/RobOS")
+                    }}
+                  >
+                    Github
+                  </Button>
+                </Box>
+                <Typography
+                  variant="h6"
+                  align="left"
+                  sx={{
+                    fontFamily: "Verdana, sans-serif",
+                  }}
+                >
+                  <b>Description:</b>
+                  Open source robot firmware capable of running on widespread
+                  low compute power esp32 board. Includes many features such as
+                  pub/sub architecture, websocket communication, bluetooth,
+                  wifi, and more
+                </Typography>
+                <Box
+                  component="img"
+                  src={MyRobotGif}
+                  sx={{ width: "100%" }}
+                ></Box>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent>
+                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                  <Typography
+                    variant="h5"
+                    align="left"
+                    sx={{
+                      fontWeight: "bold",
+                      fontFamily: "Arial Black, sans-serif",
+                    }}
+                  >
+                    Canavassa
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    onClick={() => {
+                      window.open("https://github.com/mcmogaming/canvassa")
+                    }}
+                  >
+                    Github
+                  </Button>
+                </Box>
+                <Typography
+                  variant="h6"
+                  align="left"
+                  sx={{
+                    fontFamily: "Verdana, sans-serif",
+                  }}
+                >
+                  <b>Description:</b>
+                  An interactive drawing application
+                </Typography>
+                <Box
+                  component="img"
+                  src={CanvassaGif}
+                  sx={{ width: "100%" }}
+                ></Box>
+              </CardContent>
             </Card>
           </Box>
         </Grid>
