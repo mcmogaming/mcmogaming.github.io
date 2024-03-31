@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.35c8f5a3.js",
+    "static/js/453.63834957.chunk.js": "/static/js/453.63834957.chunk.js",
+    "static/media/robot.gif": "/static/media/robot.2abe30af4cee8868fd0e.gif",
+    "static/media/canvassa.gif": "/static/media/canvassa.c2657a8c0aec05d98e51.gif",
+    "static/media/profile.jpg": "/static/media/profile.f20cf9f0a940d0edb5f8.jpg",
+    "static/media/kherg_logo.png": "/static/media/kherg_logo.5e486d3e754631affc3f.png",
+    "static/media/fullresume.pdf": "/static/media/fullresume.6fb9c384e4028c063c20.pdf",
+    "static/media/swap_logo.png": "/static/media/swap_logo.466594044499e9915998.png",
+    "static/media/swap_robot.jpeg": "/static/media/swap_robot.eae505e9e3deca62d84c.jpeg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.7defd339fd92d3e5fa034b24a5f10ed6.svg",
+    "static/media/github.svg": "/static/media/github.3b8eb6aefa05e6b31ab81724f7731e4f.svg",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.35c8f5a3.js.map": "/static/js/main.35c8f5a3.js.map",
+    "453.63834957.chunk.js.map": "/static/js/453.63834957.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.35c8f5a3.js"
+  ]
+}
