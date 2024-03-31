@@ -270,8 +270,8 @@ export const Homepage = () => {
                     fontFamily: "Verdana, sans-serif",
                   }}
                 >
-                  <b>Description:</b>
-                  An interactive drawing application
+                  <b>Description:</b>A sharable whiteboard to collaborate on
+                  projects with peers.
                 </Typography>
                 <Box
                   component="img"
