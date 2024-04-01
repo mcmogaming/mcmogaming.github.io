@@ -6,6 +6,7 @@ import { ThemeProvider } from "@emotion/react"
 import { DarkTheme } from "./components/Theme"
 import { HomePage } from "./pages/Home.page"
 import { ProjectsPage } from "./pages/Projects.page"
+import { QrCodePage } from "./pages/Qrcode.page"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="projects" element={<ProjectsPage />} />
+            <Route path="qrcode" element={<QrCodePage />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
