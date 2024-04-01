@@ -74,6 +74,7 @@ export const HomePage = () => {
                       sx={{
                         display: "flex",
                         justifyContent: "left",
+                        flexWrap: "wrap",
                         mx: 2,
                       }}
                     >
@@ -144,6 +145,7 @@ export const HomePage = () => {
                       sx={{
                         display: "flex",
                         justifyContent: "left",
+                        flexWrap: "wrap",
                         mx: 2,
                       }}
                     >
