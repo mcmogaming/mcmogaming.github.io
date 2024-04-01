@@ -12,7 +12,7 @@ import CardContent from "@mui/material/CardContent"
 import MyRobotGif from "../gif/robot.gif"
 import CanvassaGif from "../gif/canvassa.gif"
 
-export const Homepage = () => {
+export const HomePage = () => {
   return (
     <>
       <Grid container spacing={2}>

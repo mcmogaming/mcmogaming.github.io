@@ -17,11 +17,13 @@ import EmailIcon from "@mui/icons-material/Email"
 import { SvgIcon } from "@mui/material"
 import Email from "@mui/icons-material/Email"
 import ResumePdf from "../../fullresume.pdf"
+import { useNavigate } from "react-router-dom"
 
 const pages = ["Me", "Projects", "Resume"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
 
 export const NavBar = () => {
+  const navigate = useNavigate()
   const [anchorElNav, setAnchorElNav] = React.useState(null)
   const [anchorElUser, setAnchorElUser] = React.useState(null)
 
@@ -35,8 +37,14 @@ export const NavBar = () => {
   const handleCloseNavMenu = (page) => {
     return () => {
       if (page) {
+        if (page == "Me") {
+          navigate("/")
+        }
         if (page == "Resume") {
           window.open(ResumePdf)
+        }
+        if (page == "Projects") {
+          navigate("projects")
         }
       }
     }
@@ -63,6 +71,9 @@ export const NavBar = () => {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+            }}
+            onClick={() => {
+              navigate("/")
             }}
           >
             Mohammad Rahman
