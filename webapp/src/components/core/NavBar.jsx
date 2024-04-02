@@ -18,6 +18,7 @@ import { SvgIcon } from "@mui/material"
 import Email from "@mui/icons-material/Email"
 import ResumePdf from "../../fullresume.pdf"
 import { useNavigate } from "react-router-dom"
+import QrCode2Icon from "@mui/icons-material/QrCode2"
 
 const pages = ["Me", "Projects", "Resume"]
 const settings = ["Profile", "Account", "Dashboard", "Logout"]
@@ -185,6 +186,19 @@ export const NavBar = () => {
                 <EmailIcon />
                 <Typography textAlign="center" sx={{ p: 1 }}>
                   Email
+                </Typography>
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Qr Code">
+              <IconButton
+                onClick={() => {
+                  navigate("qrcode")
+                }}
+                sx={{ color: "white", mx: 2, display: "flex", p: 0 }}
+              >
+                <QrCode2Icon />
+                <Typography textAlign="center" sx={{ p: 1 }}>
+                  Share
                 </Typography>
               </IconButton>
             </Tooltip>
